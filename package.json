@@ -1,0 +1,23 @@
+{
+  "name": "to-do-list-app",
+  "version": "1.0.0",
+  "description": "To-Do List Web Application",
+  "main": "index.js",
+  "keywords": [
+    "to-do-list",
+    "azure"
+  ],
+  "author": "Alexander Alexeyev",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "swaggerize-ui": "^1.0.1"
+  }
+}

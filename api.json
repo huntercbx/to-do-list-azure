@@ -1,0 +1,43 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "To Do List",
+        "description": "A To Do List API based on Swagger"
+    },
+    "paths": {
+        "/lists": {
+            "get": {
+                "tags": ["Lists"],
+                "operationId": "lists_get",
+                "consumes": [],
+                "produces": ["application/json", "text/json"],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/List"
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        }
+    },
+    "definitions": {
+        "List": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
